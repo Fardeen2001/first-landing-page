@@ -1,0 +1,62 @@
+@media screen and (max-width:991px){
+    .primary-btn{
+        width: 90vw;
+        text-align: center;
+    }
+    h2{
+        font-size: 1.5rem;
+    }
+    h3{
+        font-size: 1.2rem;
+    }
+    p{
+        font-size: 1rem;
+    }
+    .nav-links{
+        display: none;
+    }
+    .nav-toggle{
+        display: inline;
+        margin-right: 20px;
+    }
+    .header-section{
+        flex-direction: column-reverse;
+    }
+    .header-left{
+        max-width: 100vw;
+        text-align: center;
+    }
+    .features-card{
+        text-align: center;
+        max-width:45%;
+    }
+    .example-card{
+        min-width:calc(50% - 20px);  
+        gap:20px;
+        margin-bottom: 20px;
+    }
+  
+    .cta-container{
+        flex-direction: column-reverse;
+       
+    }
+    .cta-img img{
+        max-height: 60vh;
+        
+    }
+    .cta-text{
+        text-align: center;
+        max-height: 140vh;
+    }
+   .cta-list{
+    justify-content: center;
+   }
+}
+@media screen and (max-width:768px) {
+
+    
+}
+@media screen and (max-width:428px) {
+
+    
+}
