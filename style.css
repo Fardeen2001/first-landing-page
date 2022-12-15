@@ -105,6 +105,7 @@ li{
 .main-nav{
     margin: 20px;
     justify-content: space-between;
+    position: relative;
 }
 .nav-links ul{
     justify-content:end;
@@ -182,6 +183,9 @@ height: 46px;
 .big-feature-area{
     gap: 20px;
    
+}
+#big-feature-2{
+    flex-direction: row-reverse;
 }
 .feature-img img{
     width: 100%;

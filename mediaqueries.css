@@ -12,11 +12,26 @@
     p{
         font-size: 1rem;
     }
+    .main-nav{
+        overflow: initial;
+    }
     .nav-links{
-        display: none;
+        position: absolute;
+        background-color: white;
+        left:-500%;
+        top: 100%;
+        width: 100%;
+        padding-block: 20px;
+        transition: 0.5s ease-in-out;
+    }
+    .nav-links.active{
+        left: 0%;
+    }
+    .nav-links ul{
+        flex-direction: column;
     }
     .nav-toggle{
-        display: inline;
+        display:block;
         margin-right: 20px;
     }
     .header-section{
@@ -46,17 +61,66 @@
     }
     .cta-text{
         text-align: center;
-        max-height: 140vh;
+        
     }
    .cta-list{
     justify-content: center;
    }
 }
 @media screen and (max-width:768px) {
-
     
+    .features-card{
+        text-align: center;
+        max-width:40%;
+    }
+    .example-header{
+        text-align: center;
+        margin-top: 20px;
+    }
+    .example-card{
+        min-width:calc(50% - 10px);  
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    .big-feature-area,#big-feature-2{
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+    .feature-des{
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+    
+   .footer-container{
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 40px;
+   }
+   .column-list{
+    align-items: stretch;
+    }
+  .sub-footer-container{
+    flex-wrap: wrap;
+   }
 }
 @media screen and (max-width:428px) {
-
-    
+    :root{
+        --padding-inline-section:10px;
+    }
+    h1{
+        font-size: 2rem;
+    }
+    .features-card{
+        text-align: center;
+        max-width:100%;
+    }
+    .example-card{
+        min-width:100%;  
+        margin-bottom: 20px;
+        text-align: center;
+    }
 }
